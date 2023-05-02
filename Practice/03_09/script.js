@@ -23,4 +23,29 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  toggleName: function (newName) {
+    this.name = newName;
+  },
+  changeColor: function (navoColor) {
+    this.color = navoColor;
+  },
+  newVolume: function (vol) {
+    this.volume = vol;
+  },
 };
+
+console.log("name before :", backpack.name);
+
+backpack.toggleName("Dev Sachaniya The Absolute God");
+
+console.log("Name After:", backpack.name);
+console.log(backpack.color);
+backpack.changeColor("Dark Black");
+console.log(backpack.color);
+
+console.log(backpack.volume);
+backpack.newVolume(56);
+console.log(backpack.volume);
+
+let Dev = document.getElementById("dev");
+Dev.innerHTML = `<h1>${backpack.name}</h1>`;

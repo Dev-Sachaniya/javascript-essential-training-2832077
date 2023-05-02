@@ -11,6 +11,9 @@ const backpack = {
     left: 26,
     right: 26,
   },
+  newVolume: function (newVal) {
+    this.volume = newVal;
+  },
   lidOpen: false,
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
